@@ -1,0 +1,19 @@
+{
+  "name": "github-battle",
+  "version": "1.0.0",
+  "description": "Sample app for Tyler McGinnis' React Fundamentals course",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:growlybear/github-battle.git"
+  },
+  "author": "Michael Allan <growlymike@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/growlybear/github-battle/issues"
+  },
+  "homepage": "https://github.com/growlybear/github-battle"
+}
