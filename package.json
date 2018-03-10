@@ -6,6 +6,12 @@
   "scripts": {
     "test": "jest"
   },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:growlybear/github-battle.git"
