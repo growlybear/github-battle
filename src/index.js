@@ -1,13 +1,9 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 
-require('./index.css')
+import App from './components/App'
 
-class App extends Component {
-  render () {
-    return <h1>Hello!</h1>
-  }
-}
+require('./index.css')
 
 ReactDOM.render(
   <App />,
