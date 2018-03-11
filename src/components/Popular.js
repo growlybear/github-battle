@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import api from '../utils/api'
+
 function SelectLanguage(props) {
   var languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python']
   return (
@@ -29,13 +31,19 @@ class Popular extends Component {
   constructor (props) {
     super()
     this.state = {
-      selected: 'All'
+      selected: 'All',
+      repos: null
     }
     this.select = this.select.bind(this)
   }
 
   select (lang) {
     this.setState(() => ({ selected: lang }))
+  }
+
+  componentDidMount () {
+    api.fetchPopularLanguages(this.state.selected)
+      .then(data => console.log(data))
   }
 
   render () {
