@@ -49,9 +49,12 @@ class Popular extends Component {
 
   render () {
     return (
+      <div>
       <SelectLanguage
         selectedLanguage={this.state.selected}
         onSelect={this.select} />
+      <pre><code>{ JSON.stringify(this.state.repos, null, 2)}</code></pre>
+      </div>
     )
   }
 }
