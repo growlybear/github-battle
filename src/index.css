@@ -1,3 +1,18 @@
 body {
-  background-color: green;
+  /* cf. Github stack from https://bitsofco.de/the-new-system-font-stack/ */
+  font-family: -apple-system,
+               BlinkMacSystemFont,
+               "Segoe UI",
+               Roboto,
+               Helvetica,
+               Arial,
+               sans-serif,
+               "Apple Color Emoji", /* Emojis */
+               "Segoe UI Emoji",    /* Emojis */
+               "Segoe UI Symbol";   /* Emojis */
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
 }
