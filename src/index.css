@@ -10,6 +10,8 @@ body {
                "Apple Color Emoji", /* Emojis */
                "Segoe UI Emoji",    /* Emojis */
                "Segoe UI Symbol";   /* Emojis */
+  margin: 0;
+  padding: 0;
 }
 
 ul {
