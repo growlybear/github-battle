@@ -40,7 +40,7 @@ class Popular extends Component {
   select (lang) {
     this.setState(() => ({ selected: lang }))
     api.fetchPopularLanguages(lang)
-      .then(data => console.log(data))
+      .then(repos => this.setState({ repos }))
   }
 
   componentDidMount () {
