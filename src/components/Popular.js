@@ -27,7 +27,7 @@ SelectLanguage.propTypes = {
 
 class Popular extends Component {
   constructor (props) {
-    super(props)
+    super()
     this.state = {
       selected: 'All'
     }
