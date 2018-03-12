@@ -1,13 +1,16 @@
 import React, { Component } from 'react'
+import { BrowserRouter, Route } from 'react-router-dom'
 
 import Popular from './Popular'
 
 class App extends Component {
   render () {
     return (
-      <div className="container">
-        <Popular />
-      </div>
+      <BrowserRouter>
+        <div className="container">
+          <Route path="/" component={Popular} />
+        </div>
+      </BrowserRouter>
     )
   }
 }
