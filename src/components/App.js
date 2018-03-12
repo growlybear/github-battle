@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 
 import Nav from './Nav'
 import Home from './Home'
+import Battle from './Battle'
 import Popular from './Popular'
 
 class App extends Component {
@@ -12,6 +13,7 @@ class App extends Component {
         <div className="container">
           <Nav />
           <Route exact path="/" component={Home} />
+          <Route exact path="/Battle" component={Battle} />
           <Route exact path="/popular" component={Popular} />
         </div>
       </BrowserRouter>
