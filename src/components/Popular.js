@@ -71,6 +71,7 @@ class Popular extends Component {
       selected: lang,
       repos: null
     }))
+    // TODO no error handling yet
     api.fetchPopularLanguages(lang)
       .then(repos => this.setState({ repos }))
   }
