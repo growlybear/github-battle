@@ -58,7 +58,7 @@ RepoGrid.propTypes = {
 
 class Popular extends Component {
   constructor (props) {
-    super()
+    super(props)
     this.state = {
       selected: 'All',
       repos: null
