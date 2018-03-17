@@ -48,7 +48,8 @@ const sortPlayers = (players) => (
 const API = {
   battle: (players) => axios.all(players.map(getUserData))
     .then(sortPlayers)
-    .catch(handleError),
+    .catch(handleError)
+  ,
   fetchPopularLanguages: (lang) => {
     const uri = window.encodeURI(
       `https://api.github.com/search/repositories?q=stars:>1+language:${lang}`
