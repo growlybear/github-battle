@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import queryString from 'query-string'
 
+import PlayerPreview from './PlayerPreview'
 import api from '../utils/api'
 
 const Player = (props) => (
